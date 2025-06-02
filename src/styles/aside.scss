@@ -1,5 +1,43 @@
+@use "variables" as *;
+
 .filters-menu{
   width: 232px;
   height: 252px;
   background-color: $background-filter;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.filters-menu--item{
+  height: 20px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  padding-left: 20px;
+}
+.filters-menu--item label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.filters-menu--item label input {
+
+  height: 20px;
+  width: 20px;
+}
+.filters-menu--item:hover{
+  background-color: $cursor-hover;
+  cursor: url("../assets/Cursor.svg"), auto;
+}
+.filters-menu--item:hover label {
+  cursor: inherit;
+}
+.filters-menu--header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin: 0;
+  color: $ah;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
 }

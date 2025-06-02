@@ -1,0 +1,9 @@
+@use "variables" as *;
+.Btn--of--app{
+  width: 502px!important;
+  height: 50px!important;
+  background-color: $hover-color;
+  color: $background-app;
+  border: 0;
+  border-radius: 5px;
+}

@@ -10,9 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "-": "^0.0.1",
+    "@reduxjs/toolkit": "^2.8.2",
     "antd": "^5.25.3",
+    "g": "^2.0.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "redux": "^5.0.1",
     "sass": "^1.89.0"
   },
   "devDependencies": {

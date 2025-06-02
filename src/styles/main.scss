@@ -1,16 +1,27 @@
-@import "variables";
-@import "aside";
-@import "header";
-@import "tickets--menu";
-@import "tabs";
-.app{
+@use "variables" as *;
+@use "aside";
+@use "header";
+@use "tickets--menu";
+@use "tabs";
+@use "ticket";
+@use "Button";
+
+// Подключение шрифта (лучший вариант)
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif; // Применяем шрифт ко всему документу
+  background-color: $background-app;
+}
+
+.app {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: $background-app;
 }
-ul{
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;

@@ -1,29 +1,29 @@
+//Тут импорты стилей
 import "../src/styles/main.scss";
 import '../src/assets/Logo.svg'
-
-
-import TicketsMenu from "./components/TicketsMenu.jsx";
+// Тут импорты компонентов
+import TicketsList from "./components/TicketsList.jsx";
 import Tabs from "./components/Tabs.jsx";
-import CheckBox from "./components/CheckBox.jsx";
+import Aside from "./components/Aside.jsx";
+import Btn from "./components/Button.jsx";
 
 
 const App = () => {
-      return (
-          <div className='app'>
-            <header>
-                <img className='header--img' src='../src/assets/Logo.svg'/>
-            </header>
-            <aside className="filters-menu">
-                <CheckBox/>
-            </aside>
-            <main className="tickets--menu">
-                <Tabs/>
-              <div>
-                  <TicketsMenu/>
-              </div>
-            </main>
-          </div>
 
+      return (
+              <div className='app'>
+                  <header>
+                      <img className='header--img' src='../src/assets/Logo.svg'/>
+                  </header>
+                  <aside className="filters-menu">
+                      <Aside/>
+                  </aside>
+                  <main className="tickets--menu">
+                      <Tabs/>
+                      <TicketsList/>
+                      <Btn/>
+                  </main>
+              </div>
       )
 }
 export default App

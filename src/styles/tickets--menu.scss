@@ -1,15 +1,7 @@
-@import "variables";
+@use "variables" as *;
 
 .tickets--menu{
   width: 502px;
   height: 1000px;
   margin-left: 20px;
-}
-.ticket{
-  width: 502px;
-  height: 184px;
-  border: 2px solid darkblue;
-  background-color: $background-ticket;
-  margin: 0;
-  margin-bottom: 20px;
 }
