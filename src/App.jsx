@@ -1,6 +1,6 @@
 //Тут импорты стилей
 import "../src/styles/main.scss";
-import '../src/assets/Logo.svg'
+import logo from './assets/Logo.svg';
 // Тут импорты компонентов
 import TicketsList from "./components/TicketsList.jsx";
 import Tabs from "./components/Tabs.jsx";
@@ -13,7 +13,7 @@ const App = () => {
       return (
               <div className='app'>
                   <header>
-                      <img className='header--img' src='../src/assets/Logo.svg'/>
+                      <img className='header--img' src={logo} alt='logo'/>
                   </header>
                   <aside className="filters-menu">
                       <Aside/>
@@ -26,4 +26,4 @@ const App = () => {
               </div>
       )
 }
-export default App
+export default App;
