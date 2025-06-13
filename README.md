@@ -1,1 +1,1 @@
-avia-sales-mxvo-git-master-qsecers-projects.vercel.app
+https://avia-sales-mxvo-git-master-qsecers-projects.vercel.app
